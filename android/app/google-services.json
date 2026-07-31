@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "23901058949",
+    "project_id": "karma-verito",
+    "storage_bucket": "karma-verito.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23901058949:android:e60fd6daffce8bdbbbf6ec",
+        "android_client_info": {
+          "package_name": "com.example.karma_verito"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyaBuZXh-2IGLoLMPJ9N0gfANuJY_LuCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
