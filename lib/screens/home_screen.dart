@@ -28,6 +28,7 @@ class _HomePageState extends State<HomePage> {
   bool _isLoading = false;
   bool _loggingOut = false;
   Geofence? _currentGeofence;
+  String baseUrl = "192.168.0.128:64";
 
   @override
   void initState() {
@@ -524,7 +525,7 @@ class _HomePageState extends State<HomePage> {
     print("Attempting to fetch $userPhoneNumber from API...");
 
     final url = Uri.parse(
-      'http://192.168.0.128:64/employee?mobile=+$userPhoneNumber',
+      'http://$baseUrl/employee?mobile=+$userPhoneNumber',
     );
     print('Calling Api from: $url');
 
@@ -658,7 +659,7 @@ class _HomePageState extends State<HomePage> {
     print('Attendance Data: $attendanceData');
 
     try {
-      final url = Uri.parse('http://192.168.0.128:64/check-in');
+      final url = Uri.parse('http://$baseUrl/check-in');
       print('Calling Api from: $url');
 
       final response = await http
@@ -786,7 +787,7 @@ class _HomePageState extends State<HomePage> {
     print('Attendance Data: $attendanceData');
 
     try {
-      final url = Uri.parse('http://192.168.0.128:64/check-out');
+      final url = Uri.parse('http://$baseUrl/check-out');
       print('Calling Api from: $url');
 
       final response = await http
@@ -848,7 +849,7 @@ class _HomePageState extends State<HomePage> {
 
     try {
       final url = Uri.parse(
-        'http://192.168.0.128:64/assigned-geofences?empId=$_empId',
+        'http://$baseUrl/assigned-geofences?empId=$_empId',
       );
       print('Calling Api from: $url');
 
