@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
   bool _isLoading = false;
   bool _loggingOut = false;
   Geofence? _currentGeofence;
-  String baseUrl = "123.252.131.18:64";
+  String baseUrl = "123.252.131.18:66";
 
   @override
   void initState() {

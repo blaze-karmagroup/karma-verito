@@ -23,7 +23,7 @@ class _AuthMobileState extends State<AuthMobile> {
   Timer? _timer;
   int _timeRemaining = 60;
   bool resendAvailable = false;
-  String baseUrl = "123.252.131.18:64";
+  String baseUrl = "123.252.131.18:66";
 
   @override
   void initState() {
